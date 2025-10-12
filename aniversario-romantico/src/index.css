@@ -1,3 +1,4 @@
+/* index.css */
 @font-face {
   font-family: 'Gotico';
   src: url('./assets/fonts/DraculitoS_.ttf') format('truetype');
@@ -7,8 +8,6 @@ body {
   font-family: 'Gotico', system-ui, sans-serif;
 }
 
-
-
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -16,10 +15,9 @@ body {
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-    background-image: url("/images/fondo2.webp");
+  background-image: url("/images/fondo2.webp");
   background-size: cover;
   background-position: center;
-
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -55,8 +53,8 @@ h2 {
   text-align: left;
   color :#ff6c98;
   margin-left: 30px;
-  
 }
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -130,77 +128,4 @@ button:focus-visible {
 
 .read-the-docs {
   color: #888;
-}
-
-
-/* === LOGIN PAGE === */
-
-.login-container {
-  width: 600px;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(2px);
-}
-
-.login-card {
-  background: rgba(0, 0, 0, 0.7);
-  border: 2px solid #8b0000;
-  border-radius: 16px;
-  padding: 2rem;
-  height: 600px;
-  width: 550px;
-  color: #f5f5f5;
-  text-align: center;
-  box-shadow: 0 0 25px rgba(139, 0, 0, 0.8);
-}
-
-.login-card h1 {
-  font-family: 'Gotico', serif;
-  color: #ff4d4d;
-  margin-bottom: 1rem;
-  letter-spacing: 2px;
-  font-size: 4.5rem;
-}
-
-.login-card input {
-  width: 100%;
-  padding: 0.8rem;
-  margin: 0.5rem 0;
-  border: none;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  color: rgb(150, 128, 128);
-  font-size: 1.6rem;
-  font-family: 'Gotico';
-}
-
-.login-card input::placeholder {
-  color: #ccc;
-}
-
-.login-card button {
-  width: 80%;
-  padding: 0.8rem;
-  margin-top: 0.5rem;
-  background-color: #ff1313;
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.login-card button:hover {
-  background-color: rgb(224, 22, 22);
-}
-
-.login-card p {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  color: #bbb;
-  font-family: 'Gotico';
 }
