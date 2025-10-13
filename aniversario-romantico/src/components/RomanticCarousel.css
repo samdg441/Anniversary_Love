@@ -1,8 +1,9 @@
-/* RomanticCarousel.css - Con Corazones Mejorados */
+/* RomanticCarousel.css - Tamaños Estandarizados */
+
 .romantic-carousel {
   position: relative;
   max-width: 1100px;
-  width: 98%;
+  width: 100%;
   margin: 2rem auto;
   padding: 1.5rem;
   background: rgba(0, 0, 0, 0.85);
@@ -14,7 +15,7 @@
   backdrop-filter: blur(8px);
 }
 
-/* Estilo específico para el carrusel futuro */
+/* Estilo específico para el carrusel futuro - MISMOS TAMAÑOS */
 .future-carousel {
   border-color: #ff6c98;
   box-shadow: 
@@ -27,59 +28,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 500px; /* ALTURA MÍNIMA ESTÁNDAR */
 }
 
-/* Botones de navegación mejorados */
-.nav-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.8);
-  border: 2px solid #ff6c98;
-  color: #ff6c98;
-  font-size: 2.5rem;
-  font-family: 'Gotico', serif;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  z-index: 10;
-  opacity: 0.9;
-}
-
-.nav-button:hover {
-  opacity: 1;
-  background: rgba(255, 108, 152, 0.3);
-  box-shadow: 
-    0 0 20px #ff6c98,
-    inset 0 0 10px rgba(255, 108, 152, 0.4);
-  transform: translateY(-50%) scale(1.1);
-}
-
-.prev-button {
-  left: 10px;
-}
-
-.next-button {
-  right: 10px;
-}
-
-/* Contenido del slide más compacto */
+/* CONTENEDOR DE SLIDE ESTÁNDAR */
 .slide-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem; /* Reducido el gap */
+  gap: 1rem;
   width: 100%;
+  min-height: 450px; /* ALTURA MÍNIMA ESTÁNDAR */
+  justify-content: center;
 }
 
+/* CONTENEDOR DE IMAGEN ESTÁNDAR */
 .image-container {
   width: 100%;
-  height: 400px; /* Ajustado para mejor proporción */
+  height: 350px; /* ALTURA FIJA ESTÁNDAR */
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -125,10 +91,10 @@
   text-align: center;
 }
 
-/* Texto romántico más compacto */
+/* CONTENEDOR DE TEXTO ESTÁNDAR */
 .text-content {
   text-align: center;
-  padding: 1rem 1.5rem; /* Reducido el padding */
+  padding: 1rem 1.5rem;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   border: 2px solid #8b0000;
@@ -136,7 +102,11 @@
   box-shadow: 
     0 0 15px rgba(255, 108, 152, 0.4),
     inset 0 0 10px rgba(139, 0, 0, 0.3);
-  margin-top: 0.5rem; /* Reducido el margen superior */
+  margin-top: 0.5rem;
+  min-height: 120px; /* ALTURA MÍNIMA ESTÁNDAR PARA TEXTO */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .future-carousel .text-content {
@@ -146,21 +116,22 @@
     inset 0 0 10px rgba(255, 108, 152, 0.2);
 }
 
+/* TEXTO ESTÁNDAR - MISMOS TAMAÑOS DE FUENTE */
 .romantic-value {
   font-family: 'Gotico', serif;
-  font-size: 3.5rem; /* Ajustado para mejor proporción */
+  font-size: 3.5rem;
   color: #ff6c98;
   text-shadow: 
     3px 3px 6px rgba(0, 0, 0, 0.9),
     0 0 15px rgba(255, 108, 152, 0.7);
-  margin-bottom: 0.3rem; /* Reducido */
+  margin-bottom: 0.3rem;
   line-height: 1;
   font-weight: bold;
 }
 
 .romantic-text {
   font-family: 'Gotico', serif;
-  font-size: 1.8rem; /* Ajustado para mejor proporción */
+  font-size: 1.8rem;
   color: #ffffff;
   text-shadow: 
     2px 2px 4px rgba(0, 0, 0, 0.9),
@@ -168,19 +139,58 @@
   letter-spacing: 1px;
 }
 
-/* Indicadores de corazones - Versión mejorada */
+/* Botones de navegación - TAMAÑOS ESTÁNDAR */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #ff6c98;
+  color: #ff6c98;
+  font-size: 2.5rem;
+  font-family: 'Gotico', serif;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+  opacity: 0.9;
+}
+
+.nav-button:hover {
+  opacity: 1;
+  background: rgba(255, 108, 152, 0.3);
+  box-shadow: 
+    0 0 20px #ff6c98,
+    inset 0 0 10px rgba(255, 108, 152, 0.4);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+/* Indicadores de corazones - TAMAÑOS ESTÁNDAR */
 .carousel-indicators {
   display: flex;
   justify-content: center;
-  gap: 0.8rem; /* Espaciado reducido */
-  margin-top: 1.2rem; /* Margen superior reducido */
+  gap: 0.8rem;
+  margin-top: 1.2rem;
   padding: 0.8rem;
 }
 
 .heart-indicator {
   background: none;
   border: none;
-  font-size: 1.8rem; /* Tamaño reducido para mejor proporción */
+  font-size: 1.8rem;
   color: rgba(255, 108, 152, 0.4);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -195,7 +205,7 @@
 
 .heart-indicator:hover {
   color: rgba(255, 108, 152, 0.8);
-  transform: scale(1.2); /* Escala uniforme sin distorsión */
+  transform: scale(1.2);
 }
 
 .heart-indicator.active {
@@ -203,11 +213,10 @@
   text-shadow: 
     0 0 10px #ff6c98,
     0 0 20px #ff6c98;
-  transform: scale(1.3); /* Escala uniforme sin distorsión */
+  transform: scale(1.3);
   animation: gentle-pulse 1.5s ease-in-out infinite;
 }
 
-/* Animación suave de pulso sin distorsión */
 @keyframes gentle-pulse {
   0%, 100% {
     transform: scale(1.3);
@@ -223,7 +232,7 @@
   }
 }
 
-/* Efectos de brillo mejorados */
+/* Efectos de brillo */
 .romantic-carousel::before {
   content: '';
   position: absolute;
@@ -252,7 +261,7 @@
   }
 }
 
-/* Responsive mejorado */
+/* Responsive - MISMOS TAMAÑOS EN TODAS LAS PANTALLAS */
 @media (max-width: 1200px) {
   .romantic-carousel {
     max-width: 95%;
@@ -260,27 +269,15 @@
   }
   
   .image-container {
-    height: 350px;
+    height: 320px; /* MISMA ALTURA */
   }
   
-  .nav-button {
-    width: 45px;
-    height: 45px;
-    font-size: 2.2rem;
+  .carousel-container {
+    min-height: 450px; /* MISMA ALTURA */
   }
   
-  .romantic-value {
-    font-size: 3rem;
-  }
-  
-  .romantic-text {
-    font-size: 1.6rem;
-  }
-  
-  .heart-indicator {
-    font-size: 1.6rem;
-    width: 28px;
-    height: 28px;
+  .slide-content {
+    min-height: 400px; /* MISMA ALTURA */
   }
 }
 
@@ -290,62 +287,55 @@
   }
   
   .image-container {
-    height: 300px;
+    height: 280px; /* MISMA ALTURA */
   }
   
-  .nav-button {
-    width: 40px;
-    height: 40px;
-    font-size: 2rem;
+  .carousel-container {
+    min-height: 380px; /* MISMA ALTURA */
   }
   
-  .romantic-value {
-    font-size: 2.5rem;
+  .slide-content {
+    min-height: 340px; /* MISMA ALTURA */
   }
   
-  .romantic-text {
-    font-size: 1.4rem;
-  }
-  
-  .heart-indicator {
-    font-size: 1.4rem;
-    width: 25px;
-    height: 25px;
-  }
-  
-  .carousel-indicators {
-    gap: 0.6rem;
-    margin-top: 1rem;
+  .text-content {
+    min-height: 100px; /* MISMA ALTURA */
   }
 }
 
 @media (max-width: 480px) {
   .image-container {
-    height: 250px;
+    height: 220px; /* MISMA ALTURA */
+  }
+  
+  .carousel-container {
+    min-height: 320px; /* MISMA ALTURA */
+  }
+  
+  .slide-content {
+    min-height: 280px; /* MISMA ALTURA */
+  }
+  
+  .text-content {
+    min-height: 90px; /* MISMA ALTURA */
+    padding: 0.8rem 1rem;
   }
   
   .romantic-value {
-    font-size: 2.2rem;
+    font-size: 2.8rem; /* MISMO TAMAÑO */
   }
   
   .romantic-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem; /* MISMO TAMAÑO */
   }
-  
-  .nav-button {
-    width: 35px;
-    height: 35px;
-    font-size: 1.8rem;
-  }
-  
-  .heart-indicator {
-    font-size: 1.2rem;
-    width: 22px;
-    height: 22px;
-  }
-  
-  .carousel-indicators {
-    gap: 0.5rem;
-    margin-top: 0.8rem;
-  }
+}
+.future-carousel {
+  max-width: 1100px !important;
+  width: 98% !important;
+  margin: 2rem auto !important;
+}
+
+.future-section {
+  width: 100% !important;
+  max-width: 100% !important;
 }

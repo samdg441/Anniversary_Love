@@ -1,25 +1,25 @@
 import { useState, useEffect } from 'react';
 import './RomanticCarousel.css';
 
-const RomanticCarousel = ({ diffDays, diffMinutes, diffSeconds }) => {
+const RomanticCarousel = () => {
   const slides = [
     { 
-      image: '/images/foto-dias.jpg', 
+      image: '/images/foto.jpeg', 
       text: 'Días Juntos', 
-      value: diffDays 
+      value: 274 
     },
     { 
-      image: '/images/foto-minutos.jpg', 
+      image: '/images/foto2.jpeg', 
+      text: 'Horas Amandote', 
+      value: 6570
+    },
+    { 
+      image: '/images/foto3.jpeg', 
       text: 'Minutos de Felicidad', 
-      value: diffMinutes 
+      value: 394200
     },
     { 
-      image: '/images/foto-segundos.jpg', 
-      text: 'Segundos de Amor', 
-      value: diffSeconds 
-    },
-    { 
-      image: '/images/foto-romantica.jpg', 
+      image: '/images/foto4.jpeg', 
       text: 'Meses Juntos', 
       value: 9 
     }

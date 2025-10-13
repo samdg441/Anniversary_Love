@@ -81,7 +81,7 @@ function HomePage() {
       {showHeart && <HeartAnimation />}
       
       <div className="content">
-        <h1>Nuestros 9 Meses</h1>
+      <h1 className="section-title">Nuestros 9 Meses</h1>
         
         {/* Carrusel del tiempo juntos */}
         <RomanticCarousel 
@@ -90,11 +90,8 @@ function HomePage() {
           diffSeconds={diffSeconds}
         />
         
-        {/* Sección futura con nuevo carrusel */}
-        <section className="future-section">
-          <h2>Y lo que nos falta vivir juntos</h2>
+          <h1 className="section-title">Y lo que nos falta vivir juntos</h1>
           <FutureCarousel />
-        </section>
       </div>
     </div>
   );

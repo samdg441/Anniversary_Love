@@ -2,38 +2,38 @@ import { useState, useEffect } from 'react';
 import './RomanticCarousel.css';
 
 const FutureCarousel = () => {
-  const slides = [
-    { 
-      image: '/images/futuro1.jpg', 
-      text: 'Nuestro Futuro Juntos', 
-      value: '1' 
-    },
-    { 
-      image: '/images/futuro2.jpg', 
-      text: 'Aventuras por Vivir', 
-      value: '2' 
-    },
-    { 
-      image: '/images/futuro3.jpg', 
-      text: 'Sueños por Cumplir', 
-      value: '3' 
-    },
-    { 
-      image: '/images/futuro4.jpg', 
-      text: 'Más Momentos Especiales', 
-      value: '4' 
-    },
-    { 
-      image: '/images/futuro5.jpg', 
-      text: 'Crecimiento Mutuo', 
-      value: '5' 
-    },
-    { 
-      image: '/images/futuro6.jpg', 
-      text: 'Eternidad Contigo', 
-      value: '6' 
-    }
-  ];
+const slides = [
+  { 
+    image: '/images/Boda.jpg', 
+    text: 'Nuestro Futuro Juntos', 
+    value: '1' 
+  },
+  { 
+    image: '/images/Parejaenmoto.jpg',  // Cambiado a "P" mayúscula
+    text: 'Aventuras por Vivir', 
+    value: '2' 
+  },
+  { 
+    image: '/images/CaneCorso.jpg', 
+    text: 'Sueños por Cumplir', 
+    value: '3' 
+  },
+  { 
+    image: '/images/foto5.jpeg',  // Usa una imagen existente (ej: foto5.jpeg)
+    text: 'Más Momentos Especiales', 
+    value: '4' 
+  },
+  { 
+    image: '/images/vivirjuntos.jpg',  // Corregido a "viviijuntos"
+    text: 'Crecimiento Mutuo', 
+    value: '5' 
+  },
+  { 
+    image: '/images/futuro.jpg', 
+    text: 'Eternidad Contigo', 
+    value: '6' 
+  }
+];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
